@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import { response } from 'express';
+
 
 it('renders without crashing', () => {
   const div = document.createElement('div');
@@ -20,4 +22,5 @@ test("the fetch fails with an error", async () => {
     await fetch(`http://localhost:5000/api/players`);
   } catch (e) {
     expect(e).toMatch("error");
-  }
+}
+})
